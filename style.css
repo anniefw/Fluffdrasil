@@ -1,3 +1,93 @@
-.main{
-    background-color: antiquewhite;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* Först gradienten, sedan bilden */
+  background: linear-gradient(
+                rgba(0, 0, 0, 0.4),   /* mörkare ton högst upp */
+                rgba(0, 0, 0, 0.4)    /* samma ton längst ner */
+              ),
+              url("forestbackground.webp") center/cover no-repeat;
+
+  height: 100vh;         /* täck hela höjden */
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+}
+
+.headerBtn {
+  padding: 6px 12px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.2); /* vit med 20 % opacitet */
+  color: white; /* eller svart beroende på bakgrunden */
+  border: 1px solid rgba(255, 255, 255, 0.4); /* svag vit kant för bättre kontrast */
+  backdrop-filter: blur(4px); /* glass-effekt (valfritt, men snyggt!) */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: medium;
+  font-weight: bold;
+}
+
+button {
+  padding: 6px 12px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.2); /* vit med 20 % opacitet */
+  color: white; /* eller svart beroende på bakgrunden */
+  border: 1px solid rgba(255, 255, 255, 0.4); /* svag vit kant för bättre kontrast */
+  backdrop-filter: blur(4px); /* glass-effekt (valfritt, men snyggt!) */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: medium;
+  font-weight: bold; 
+}
+
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#root {
+  padding: 5rem;
+  border: 5px solid white;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: black;
+  backdrop-filter: blur(4px);
+  transition: 0.3s ease;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: medium;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  width: 50%;
+  height: 50vh;
+  margin-top: 5rem;
+}
+
+img {
+  min-width: 10rem;
+  min-height: 12rem;
+}
+
+a {
+  color: black;
+  border: 2px solid white;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+a:hover {
+  background-color: rgba(255, 255, 255, 0.6);
 }
