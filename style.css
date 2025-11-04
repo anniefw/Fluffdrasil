@@ -7,12 +7,12 @@
 body {
   /* Först gradienten, sedan bilden */
   background: linear-gradient(
-                rgba(0, 0, 0, 0.4),   /* mörkare ton högst upp */
-                rgba(0, 0, 0, 0.4)    /* samma ton längst ner */
-              ),
-              url("forestbackground.webp") center/cover no-repeat;
+      rgba(0, 0, 0, 0.4),
+      /* mörkare ton högst upp */ rgba(0, 0, 0, 0.4) /* samma ton längst ner */
+    ),
+    url("forestbackground.webp") center/cover no-repeat;
 
-  height: 100vh;         /* täck hela höjden */
+  height: 100vh; /* täck hela höjden */
 }
 
 header {
@@ -30,23 +30,31 @@ header {
   backdrop-filter: blur(4px); /* glass-effekt (valfritt, men snyggt!) */
   cursor: pointer;
   transition: all 0.3s ease;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: medium;
   font-weight: bold;
 }
 
 button {
-  padding: 6px 12px;
+  padding: 10px 15px;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.2); /* vit med 20 % opacitet */
-  color: white; /* eller svart beroende på bakgrunden */
+  color: black; /* eller svart beroende på bakgrunden */
   border: 1px solid rgba(255, 255, 255, 0.4); /* svag vit kant för bättre kontrast */
   backdrop-filter: blur(4px); /* glass-effekt (valfritt, men snyggt!) */
   cursor: pointer;
   transition: all 0.3s ease;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: medium;
-  font-weight: bold; 
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: large;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.4); /* ljusare bakgrund */
+  color: #000; /* behåll svart text, alternativt lite mörkare om du vill */
+  transform: translateY(-2px) scale(1.05); /* lyft och förstärk lite */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* mjuk skugga för djup */
+  border-color: rgba(255, 255, 255, 0.6); /* förstärk kanten lite */
 }
 
 #main {
@@ -59,20 +67,20 @@ button {
   padding: 5rem;
   border: 5px solid white;
   border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.6);
   color: black;
   backdrop-filter: blur(4px);
   transition: 0.3s ease;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: medium;
   font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 2rem;
-  width: 50%;
-  height: 50vh;
+  gap: 1.5rem;
+  width: 70%;
+  height: 70vh;
   margin-top: 5rem;
 }
 
@@ -90,4 +98,18 @@ a {
 
 a:hover {
   background-color: rgba(255, 255, 255, 0.6);
+}
+
+p {
+  line-height: 1.6; /* Ökar avståndet mellan rader för bättre läsbarhet */
+  margin-bottom: 10px; /* Lägger lite utrymme mellan stycken */
+  word-wrap: break-word; /* Ser till att långa ord bryts istället för att spräcka layouten */
+  hyphens: auto; /* Möjliggör bindestreck vid radbrytning på stödjande språk */
+  font-size: 1rem; /* Lagom storlek för lätt läsning */
+  max-width: 700px;
+}
+
+h2 {
+  text-align: center;
+  font-weight: bold;
 }
