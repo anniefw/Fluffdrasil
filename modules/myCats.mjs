@@ -20,7 +20,7 @@ export function printMyCats() {
     loaTitle.textContent = "Loa";
     const loaText = document.createElement("p");
     loaText.textContent =
-      "2 år gammal hona med stamtavla från Gårvikstassens uppfödning. Svartsköldpaddsilvertabbyy-vit, MCO fs 09 22.";
+      "2 år gammal hona med stamtavla från Gårvikstassens uppfödning. Svartsköldpaddsilvertabby-vit, MCO fs 09 22.";
     const loaImage = document.createElement("img");
     loaImage.src = "testLoa.jpg";
     loaImage.alt = "Maine Coon female";
