@@ -3,26 +3,22 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
-  /* Först gradienten, sedan bilden */
-  background: linear-gradient(
-      rgba(0, 0, 0, 0.4),
-      /* mörkare ton högst upp */ rgba(0, 0, 0, 0.4) /* samma ton längst ner */
-    ),
-    url("forestbackground.webp") center/cover no-repeat;
-
-  height: 100vh; /* täck hela höjden */
+  /* Gradienten över bilden */
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("forestbackground.webp") center top repeat-y;
+  background-size: auto; /* behåll originalstorlek eller anpassa efter behov */
+  min-height: 100vh; /* minst viewportens höjd */
 }
-
 header {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 1rem;
+  margin: 1rem;
+  gap: 1rem; /* mellanrum mellan knapparna */
+  flex-wrap: wrap; /* gör att knapparna bryts till nästa rad om det behövs */
 }
-
 .headerBtn {
-  padding: 6px 12px;
+  padding: 12px 18px;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 0.2); /* vit med 20 % opacitet */
   color: white; /* eller svart beroende på bakgrunden */
@@ -33,8 +29,8 @@ header {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: medium;
   font-weight: bold;
+  margin-top: 1.5rem;
 }
-
 button {
   padding: 10px 15px;
   border-radius: 8px;
@@ -48,7 +44,6 @@ button {
   font-size: large;
   font-weight: bold;
 }
-
 button:hover {
   background-color: rgba(255, 255, 255, 0.4); /* ljusare bakgrund */
   color: #000; /* behåll svart text, alternativt lite mörkare om du vill */
@@ -62,7 +57,6 @@ button:hover {
   align-items: center;
   justify-content: center;
 }
-
 #root {
   padding: 5rem;
   border: 5px solid white;
@@ -80,26 +74,25 @@ button:hover {
   flex-direction: column;
   gap: 1.5rem;
   width: 70%;
-  height: 70vh;
+  height: auto;
   margin-top: 5rem;
 }
-
 img {
-  min-width: 10rem;
-  min-height: 12rem;
+  width: 60%; /* Bilden tar 80% av root:s bredd */
+  height: auto; /* Behåller proportionerna */
+  max-width: 80%; /* Förhindrar att bilden växer utanför root */
+  border-radius: 8px; /* Om du vill ha rundade hörn */
+  object-fit: contain; /* Bevarar bildens proportioner utan att klippa */
 }
-
 a {
   color: black;
   border: 2px solid white;
   padding: 1rem;
   border-radius: 12px;
 }
-
 a:hover {
   background-color: rgba(255, 255, 255, 0.6);
 }
-
 p {
   line-height: 1.6; /* Ökar avståndet mellan rader för bättre läsbarhet */
   margin-bottom: 10px; /* Lägger lite utrymme mellan stycken */
@@ -108,8 +101,39 @@ p {
   font-size: 1rem; /* Lagom storlek för lätt läsning */
   max-width: 700px;
 }
-
 h2 {
   text-align: center;
   font-weight: bold;
+  padding: 15px;
+}
+.button-container {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.contact-btn {
+  padding: 0.5rem 1rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+} /* Facebook-knapp */
+.facebook-btn {
+  background-color: #3b5998;
+}
+.facebook-btn:hover {
+  background-color: #2d4373;
+} /* E-post-knapp */
+.email-btn {
+  background-color: #28a745;
+}
+.email-btn:hover {
+  background-color: #218838;
+}
+
+#kittensBtn {
+  font-size: x-large;
+  background-color: rgba(255, 255, 255, 0.6); /* vit med 20 % opacitet */
+  color: #000;
 }
