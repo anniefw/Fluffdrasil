@@ -4,26 +4,25 @@
   box-sizing: border-box;
 }
 body {
-  /* Gradienten över bilden */
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("forestbackground.webp") center top repeat-y;
-  background-size: auto; /* behåll originalstorlek eller anpassa efter behov */
-  min-height: 100vh; /* minst viewportens höjd */
+  background-size: auto;
+  min-height: 100vh;
 }
 header {
   display: flex;
   justify-content: space-evenly;
   margin: 1rem;
-  gap: 1rem; /* mellanrum mellan knapparna */
-  flex-wrap: wrap; /* gör att knapparna bryts till nästa rad om det behövs */
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 .headerBtn {
   padding: 12px 18px;
   border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.2); /* vit med 20 % opacitet */
-  color: white; /* eller svart beroende på bakgrunden */
-  border: 1px solid rgba(255, 255, 255, 0.4); /* svag vit kant för bättre kontrast */
-  backdrop-filter: blur(4px); /* glass-effekt (valfritt, men snyggt!) */
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(4px);
   cursor: pointer;
   transition: all 0.3s ease;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -34,10 +33,10 @@ header {
 button {
   padding: 10px 15px;
   border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.2); /* vit med 20 % opacitet */
-  color: black; /* eller svart beroende på bakgrunden */
-  border: 1px solid rgba(255, 255, 255, 0.4); /* svag vit kant för bättre kontrast */
-  backdrop-filter: blur(4px); /* glass-effekt (valfritt, men snyggt!) */
+  background-color: rgba(255, 255, 255, 0.2);
+  color: black;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(4px);
   cursor: pointer;
   transition: all 0.3s ease;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -45,11 +44,11 @@ button {
   font-weight: bold;
 }
 button:hover {
-  background-color: rgba(255, 255, 255, 0.4); /* ljusare bakgrund */
-  color: #000; /* behåll svart text, alternativt lite mörkare om du vill */
-  transform: translateY(-2px) scale(1.05); /* lyft och förstärk lite */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* mjuk skugga för djup */
-  border-color: rgba(255, 255, 255, 0.6); /* förstärk kanten lite */
+  background-color: rgba(255, 255, 255, 0.4);
+  color: #000;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  border-color: rgba(255, 255, 255, 0.6);
 }
 
 #main {
@@ -78,11 +77,11 @@ button:hover {
   margin-top: 5rem;
 }
 img {
-  width: 60%; /* Bilden tar 80% av root:s bredd */
-  height: auto; /* Behåller proportionerna */
-  max-width: 80%; /* Förhindrar att bilden växer utanför root */
-  border-radius: 8px; /* Om du vill ha rundade hörn */
-  object-fit: contain; /* Bevarar bildens proportioner utan att klippa */
+  width: 60%;
+  height: auto;
+  max-width: 80%;
+  border-radius: 8px;
+  object-fit: contain;
 }
 a {
   color: black;
@@ -94,11 +93,11 @@ a:hover {
   background-color: rgba(255, 255, 255, 0.6);
 }
 p {
-  line-height: 1.6; /* Ökar avståndet mellan rader för bättre läsbarhet */
-  margin-bottom: 10px; /* Lägger lite utrymme mellan stycken */
-  word-wrap: break-word; /* Ser till att långa ord bryts istället för att spräcka layouten */
-  hyphens: auto; /* Möjliggör bindestreck vid radbrytning på stödjande språk */
-  font-size: 1rem; /* Lagom storlek för lätt läsning */
+  line-height: 1.6;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  hyphens: auto;
+  font-size: 1rem;
   max-width: 700px;
 }
 h2 {
@@ -118,13 +117,13 @@ h2 {
   border-radius: 0.5rem;
   font-weight: bold;
   transition: background-color 0.3s;
-} /* Facebook-knapp */
+}
 .facebook-btn {
   background-color: #3b5998;
 }
 .facebook-btn:hover {
   background-color: #2d4373;
-} /* E-post-knapp */
+}
 .email-btn {
   background-color: #28a745;
 }
@@ -134,6 +133,6 @@ h2 {
 
 #kittensBtn {
   font-size: x-large;
-  background-color: rgba(255, 255, 255, 0.6); /* vit med 20 % opacitet */
+  background-color: rgba(255, 255, 255, 0.6);
   color: #000;
 }

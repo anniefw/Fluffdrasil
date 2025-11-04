@@ -6,7 +6,6 @@ import { printAboutRace } from "./modules/aboutRace.mjs";
 import { printKittenPurchaseView } from "./modules/purchaseKittenView.mjs";
 import { printContactMeView } from "./modules/contact.mjs";
 
-// const root = document.getElementById("root");
 const aboutMeBtn = document.getElementById("aboutMeBtn");
 const myCatsBtn = document.getElementById("myCatsBtn");
 const kittensBtn = document.getElementById("kittensBtn");
