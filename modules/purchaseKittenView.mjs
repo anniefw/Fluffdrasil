@@ -6,14 +6,14 @@ export function printKittenPurchaseView() {
   const sections = [
     {
       title: "Intresse och kontakt",
-      content: `Om du är intresserad av att köpa en kattunge eller har frågor om våra katter, börja med att läsa igenom denna information. Skicka sedan ett mail och berätta vad du söker: hona eller hane, färgönskemål, samt om katten ska vara sällskap eller avel. Berätta även om ditt hem, eventuella andra djur och hur katten kommer att få vistas i vardagen.\n\nViktigt: Jag säljer endast katter som får möjlighet till utomhusvistelse.`,
+      content: `Om du är intresserad av att köpa en kattunge eller har frågor om våra katter, börja med att läsa igenom denna information. Vid intresse/kontakt, berätta om dig själv och det hem du kan erbjuda en kattunge.`,
     },
     {
       title: "Följande ingår vid köp av kattunge från Fluffdrail",
       content: `- Kattungarna levereras/hämtas vid 12–14 veckors ålder.
 - Köpeavtal.
 - Registrerad med stamtavla i SVERAK.
-- Vaccinerad två gånger mot kattsnuva och kattpest (8 och 12 veckor).
+- Vaccinerad två gånger enligt riktlinjer (8 och 12 veckor).
 - Veterinärbesiktigad med intyg som är max sju dagar gammalt.
 - Dolda fel-försäkring.
 - Försäkrad hos mig fram till leverans.
