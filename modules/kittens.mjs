@@ -7,7 +7,7 @@ export function printKittens() {
   const kittensText = document.createElement("p");
   kittensText.textContent = "Planer finns för ny kull hösten 2026.";
   const kittenImg = document.createElement("img");
-  kittenImg.src = "Samlingsfoto_Akullen.jpg";
+  kittenImg.src = "img/Samlingsfoto_Akullen.jpg";
   const kittensText2 = document.createElement("p");
   kittensText2.textContent = "A-kullen";
 
