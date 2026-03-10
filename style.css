@@ -4,8 +4,9 @@
   box-sizing: border-box;
 }
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("forestbackground.webp") center top repeat-y;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/img/forestbackground.webp") center top repeat-y;
   background-size: auto;
   min-height: 100vh;
 }
@@ -128,6 +129,13 @@ h2 {
 }
 .email-btn:hover {
   background-color: #218838;
+}
+
+.instagram-btn {
+  background-color: #a56510;
+}
+.instagram-btn:hover {
+  background-color: #805008;
 }
 
 #kittensBtn {

@@ -20,7 +20,7 @@ export function printAboutMe() {
     "Jag lägger stor vikt vid både deras hälsa och socialisering, så att varje kattunge får en trygg start i livet innan den flyttar till sitt nya hem.";
   const aboutMeText5 = document.createElement("h2");
   aboutMeText5.textContent =
-    "Hos Fluffdrasil strävar jag efter att föda upp friska, sociala och välmående Maine Coons som kan bli älskade medlemmar i sin nya familj!";
+    "Hos Fluffdrasil strävar jag efter att föda upp friska, sociala och välmående Maine Coons som kan bli älskade och keliga medlemmar i sin nya familj!";
   root.append(
     aboutMeTitle,
     aboutMeTitle2,
@@ -28,6 +28,6 @@ export function printAboutMe() {
     aboutMeText2,
     aboutMeText3,
     aboutMeText4,
-    aboutMeText5
+    aboutMeText5,
   );
 }

@@ -8,7 +8,7 @@ export function printContactMeView() {
   buttonContainer.className = "button-container";
 
   const facebookBtn = document.createElement("a");
-  facebookBtn.href = "https://www.facebook.com/share/1EmSteT7kD/";
+  facebookBtn.href = "https://www.facebook.com/profile.php/?id=61583218956154";
   facebookBtn.textContent = "Facebook";
   facebookBtn.target = "_blank";
   facebookBtn.className = "contact-btn facebook-btn";
@@ -18,7 +18,13 @@ export function printContactMeView() {
   emailBtn.textContent = "Mejl";
   emailBtn.className = "contact-btn email-btn";
 
-  buttonContainer.append(facebookBtn, emailBtn);
+  const instagramBtn = document.createElement("a");
+  instagramBtn.href = "https://www.instagram.com/fluffdrasil/";
+  instagramBtn.textContent = "Instagram";
+  instagramBtn.target = "_blank";
+  instagramBtn.className = "contact-btn instagram-btn";
+
+  buttonContainer.append(facebookBtn, emailBtn, instagramBtn);
 
   root.append(contactTitle, buttonContainer);
 }

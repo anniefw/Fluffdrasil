@@ -5,9 +5,9 @@ export function printMyCats() {
   const myCatsTitle = document.createElement("h2");
   myCatsTitle.textContent = "Mina katter";
   const loaBtn = document.createElement("button");
-  loaBtn.textContent = "Loa";
+  loaBtn.textContent = "Avelshona: Loa";
   const askeBtn = document.createElement("button");
-  askeBtn.textContent = "Aske";
+  askeBtn.textContent = "Avelshane: Aske";
 
   loaBtn.addEventListener("click", printLoa);
   askeBtn.addEventListener("click", printAske);
@@ -17,28 +17,77 @@ export function printMyCats() {
   function printLoa() {
     root.textContent = "";
     const loaTitle = document.createElement("h2");
-    loaTitle.textContent = "Loa";
+    loaTitle.textContent = "Loa (Gårvikstassens Marianne)";
     const loaText = document.createElement("p");
-    loaText.textContent =
-      "2 år gammal hona med stamtavla från Gårvikstassens uppfödning. Svartsköldpaddsilvertabby-vit, MCO fs 09 22.";
+    loaText.innerHTML =
+      "Inköpt från Gårvikstassens uppfödning, född 2023-09-21. <br> Färg: Svartsköldpaddsilvertabby-vit, MCO fs 09 22.<br> Personlighet: Söker alltid ögonkontakt och kvittrar så fort man pratar med henne! Vill ibland sova som en liten boll under armen på nätterna. Tycker dammsugare är djävulens påfund.";
     const loaImage = document.createElement("img");
-    loaImage.src = "testLoa.jpg";
+    loaImage.src = "/img/testLoa.jpg";
     loaImage.alt = "Maine Coon female";
 
-    root.append(loaTitle, loaText, loaImage, askeBtn);
+    const loa2Image = document.createElement("img");
+    loa2Image.src = "/img/Loa_2.jpg";
+    loa2Image.alt = "Maine Coon female";
+
+    const loa3Image = document.createElement("img");
+    loa3Image.src = "/img/Loa_3.jpg";
+    loa3Image.alt = "Maine Coon female";
+
+    const heritagelink = document.createElement("a");
+    heritagelink.href = "https://findus.sverak.se/Stambok/Visa/575123";
+    heritagelink.textContent = "Loas stamtavla";
+    heritagelink.target = "_blank";
+    const health = document.createElement("h2");
+    health.textContent = "Hälsoinformation för Loa";
+    const healthText = document.createElement("p");
+    healthText.innerHTML =
+      "HD: time booked, analysis to come.<br> DNA: swabs sent, awaiting results.<br> HCM: time pending.";
+
+    root.append(
+      loaTitle,
+      loaText,
+      loa3Image,
+      heritagelink,
+      health,
+      healthText,
+      loa2Image,
+      loaImage,
+      askeBtn,
+    );
   }
 
   function printAske() {
     root.textContent = "";
     const askeTitle = document.createElement("h2");
-    askeTitle.textContent = "Aske";
+    askeTitle.textContent = "Aske (Linnsan's Harry)";
     const askeText = document.createElement("p");
-    askeText.textContent =
-      "1 år gammal hane med stamtavla från Linnsan's uppfödning. Svartsmoke, MCO ns";
+    askeText.innerHTML =
+      "Inköpt från Linnsan's uppfödning, född 2024-09-11. <br> Färg: Svartsmoke, MCO ns <br> Personlighet: Helt otroligt kelig! Kommer i stort sett varje natt och vill gosa in huvudet i nacken när man sover. Ser tuff ut, men mjauar som en liten, liten bebis.";
     const askeImage = document.createElement("img");
-    askeImage.src = "testAske.webp";
+    askeImage.src = "/img/testAske.webp";
     askeImage.alt = "Maine Coon male";
+    const aske2Image = document.createElement("img");
+    aske2Image.src = "/img/Aske_2.jpg";
+    askeImage.alt = "Maine Coon male";
+    const heritagelink = document.createElement("a");
+    heritagelink.href = "https://findus.sverak.se/Stambok/Visa/571322";
+    heritagelink.textContent = "Askes stamtavla";
+    heritagelink.target = "_blank";
+    const health = document.createElement("h2");
+    health.textContent = "Hälsoinformation för Aske";
+    const healthText = document.createElement("p");
+    healthText.innerHTML =
+      "HD: time booked, analysis to come.<br> DNA: swabs sent, awaiting results.<br> HCM: time pending.";
 
-    root.append(askeTitle, askeText, askeImage, loaBtn);
+    root.append(
+      askeTitle,
+      askeText,
+      askeImage,
+      heritagelink,
+      health,
+      healthText,
+      aske2Image,
+      loaBtn,
+    );
   }
 }
