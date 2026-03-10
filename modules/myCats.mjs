@@ -41,7 +41,7 @@ export function printMyCats() {
     health.textContent = "Hälsoinformation för Loa";
     const healthText = document.createElement("p");
     healthText.innerHTML =
-      "HD: time booked, analysis to come.<br> DNA: swabs sent, awaiting results.<br> HCM: time pending.";
+      "HD: time booked, analysis to come.<br> DNA: swabs to besent, awaiting results.<br> HCM: time pending.";
 
     root.append(
       loaTitle,
@@ -77,7 +77,7 @@ export function printMyCats() {
     health.textContent = "Hälsoinformation för Aske";
     const healthText = document.createElement("p");
     healthText.innerHTML =
-      "HD: time booked, analysis to come.<br> DNA: swabs sent, awaiting results.<br> HCM: time pending.";
+      "HD: time booked, analysis to come.<br> DNA: swabs to be sent, awaiting results.<br> HCM: time pending.";
 
     root.append(
       askeTitle,
