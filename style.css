@@ -6,7 +6,7 @@
 body {
   background:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("img/forestbackground.webp") center top repeat-y;
+    url("Img/forestbackground.webp") center top repeat-y;
   background-size: auto;
   min-height: 100vh;
 }

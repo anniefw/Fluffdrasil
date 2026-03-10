@@ -22,15 +22,15 @@ export function printMyCats() {
     loaText.innerHTML =
       "Inköpt från Gårvikstassens uppfödning, född 2023-09-21. <br> Färg: Svartsköldpaddsilvertabby-vit, MCO fs 09 22.<br> Personlighet: Söker alltid ögonkontakt och kvittrar så fort man pratar med henne! Vill ibland sova som en liten boll under armen på nätterna. Tycker dammsugare är djävulens påfund.";
     const loaImage = document.createElement("img");
-    loaImage.src = "img/testLoa.jpg";
+    loaImage.src = "Img/testLoa.jpg";
     loaImage.alt = "Maine Coon female";
 
     const loa2Image = document.createElement("img");
-    loa2Image.src = "img/Loa_2.jpg";
+    loa2Image.src = "Img/Loa_2.jpg";
     loa2Image.alt = "Maine Coon female";
 
     const loa3Image = document.createElement("img");
-    loa3Image.src = "img/Loa_3.jpg";
+    loa3Image.src = "Img/Loa_3.jpg";
     loa3Image.alt = "Maine Coon female";
 
     const heritagelink = document.createElement("a");
@@ -64,10 +64,10 @@ export function printMyCats() {
     askeText.innerHTML =
       "Inköpt från Linnsan's uppfödning, född 2024-09-11. <br> Färg: Svartsmoke, MCO ns <br> Personlighet: Helt otroligt kelig! Kommer i stort sett varje natt och vill gosa in huvudet i nacken när man sover. Ser tuff ut, men mjauar som en liten, liten bebis.";
     const askeImage = document.createElement("img");
-    askeImage.src = "img/testAske.webp";
+    askeImage.src = "Img/testAske.webp";
     askeImage.alt = "Maine Coon male";
     const aske2Image = document.createElement("img");
-    aske2Image.src = "img/Aske_2.jpg";
+    aske2Image.src = "Img/Aske_2.jpg";
     askeImage.alt = "Maine Coon male";
     const heritagelink = document.createElement("a");
     heritagelink.href = "https://findus.sverak.se/Stambok/Visa/571322";
