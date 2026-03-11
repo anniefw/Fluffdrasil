@@ -144,10 +144,15 @@ h2 {
   color: #000;
 }
 
+.cat-image {
+  max-width: 120px;
+  max-height: 200px;
+}
+
 /* --- Mobilanpassning --- */
 @media screen and (max-width: 768px) {
   body {
-    background-size: cover; /* gör bakgrunden mer flexibel */
+    background-size: cover;
   }
 
   header {
@@ -195,12 +200,6 @@ h2 {
     flex-direction: column;
     gap: 0.5rem;
     align-items: center;
-  }
-
-  .contact-btn {
-    width: 80%;
-    text-align: center;
-    padding: 0.5rem 0;
   }
 
   #main {

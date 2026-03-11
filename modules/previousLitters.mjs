@@ -5,11 +5,13 @@ export function printPreviousLitters() {
   const previousLittersTitle = document.createElement("h2");
   previousLittersTitle.textContent = "Tidigare kullar";
   const ABtn = document.createElement("button");
-  ABtn.textContent = "A-kullen, född 2025-12-01";
+  const kittenImg = document.createElement("img");
+  kittenImg.src = "Img/Samlingsfoto_Akullen.jpg";
+  ABtn.textContent = "Mer info om A-kullen, född 2025-12-01";
 
   ABtn.addEventListener("click", printAlitter);
 
-  root.append(previousLittersTitle, ABtn);
+  root.append(previousLittersTitle, kittenImg, ABtn);
 
   function printAlitter() {
     root.textContent = "";

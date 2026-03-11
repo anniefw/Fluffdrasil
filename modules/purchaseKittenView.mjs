@@ -9,11 +9,11 @@ export function printKittenPurchaseView() {
       content: `Om du är intresserad av att köpa en kattunge eller har frågor om våra katter, börja med att läsa igenom denna information. Vid intresse/kontakt, berätta om dig själv och det hem du kan erbjuda en kattunge.`,
     },
     {
-      title: "Följande ingår vid köp av kattunge från Fluffdrail",
-      content: `- Kattungarna levereras/hämtas vid 12–14 veckors ålder.
+      title: "Följande ingår vid köp av kattunge från Fluffdrasil",
+      content: `- Kattungarna hämtas vid 14 veckors ålder.
 - Köpeavtal.
 - Registrerad med stamtavla i SVERAK.
-- Vaccinerad två gånger enligt riktlinjer (10 och 14 veckor).
+- Vaccinerad två gånger (10 och 14 veckor).
 - Veterinärbesiktigad med intyg som är max sju dagar gammalt.
 - Dolda fel-försäkring.
 - Försäkrad hos mig fram till leverans.
@@ -23,7 +23,7 @@ export function printKittenPurchaseView() {
     },
     {
       title: "Kostnad",
-      content: `- Tingningsavgift: 3 000 kr (ej återbetalningsbar).
+      content: `- Tingningsavgift: 3 000 kr (ej återbetalningsbar vid ånger).
 - Resterande belopp betalas vid hämtning.
 - Pris sällskapskatt: 14 000 kr.
 - Avelskatt säljs endast till registrerade uppfödare.`,
@@ -31,7 +31,7 @@ export function printKittenPurchaseView() {
     {
       title: "Kölista och besök",
       content: `- Du kan ställa dig på intresselistan för kommande kullar.
-- För personliga besök prioriteras seriösa köpare; vid långt avstånd sker kontakt via telefon/Zoom.
+- För personliga besök prioriteras seriösa köpare; vid långt avstånd går det bra med digitalt besök via telefon/Zoom.
 - Jag vill säkerställa att kattungarna hamnar i kärleksfulla, långsiktiga hem. Jag väljer därmed själv vilka hem jag säljer till.`,
     },
     {
