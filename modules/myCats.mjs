@@ -86,10 +86,13 @@ function printAske() {
   askeTitle.textContent = "Aske (Linnsan's Harry)";
   const askeText = document.createElement("p");
   askeText.innerHTML =
-    "Inköpt från Linnsan's uppfödning, född 2024-09-11. <br> Färg: Svartsmoke, MCO ns <br> Personlighet: Helt otroligt kelig! Kommer i stort sett varje natt och vill gosa in huvudet i nacken när man sover. Ser tuff ut, men mjauar som en liten, liten bebis.";
+    "Inköpt från Linnsan's uppfödning, född 2024-09-11. <br> Färg: Svartsmoke, MCO ns <br> Personlighet: Helt otroligt kelig! Kommer i stort sett varje natt och vill gosa in huvudet i nacken när man sover. Så fina tofsar, och helt enorm svans. Ser tuff ut, men mjauar som en liten, liten bebis.";
   const askeImage = document.createElement("img");
   askeImage.src = "Img/testAske.webp";
   askeImage.alt = "Maine Coon male";
+  const aske3Image = document.createElement("img");
+  aske3Image.src = "Img/Aske_3.jpg";
+  aske3Image.alt = "Maine Coon male";
   const aske2Image = document.createElement("img");
   aske2Image.src = "Img/Aske_2.jpg";
   askeImage.alt = "Maine Coon male";
@@ -110,6 +113,7 @@ function printAske() {
     heritagelink,
     health,
     healthText,
+    aske3Image,
     aske2Image,
     returnBtn,
   );
