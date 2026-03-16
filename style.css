@@ -169,6 +169,22 @@ h2 {
   height: auto;
 }
 
+.kitten-card {
+  margin-bottom: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.kitten-text {
+  margin-top: 13px;
+  font-size: 1.05rem;
+  background-color: rgba(220, 218, 215, 0.879);
+  padding: 18px;
+  border-radius: 12px;
+}
+
 /* --- Mobilanpassning --- */
 @media screen and (max-width: 768px) {
   body {
