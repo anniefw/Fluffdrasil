@@ -17,32 +17,20 @@ export function printAboutMe() {
   const sections = [
     {
       title: "Om Fluffdrasil",
-      content: `Fluffdrasil är en småskalig uppfödning av Maine Coons på vår gård i hjärtat av södra Småland. Katter har alltid varit en stor del av mitt liv, och det är en glädje att få dela min vardag med dessa fantastiska varelser.`,
+      content: `Fluffdrasil är en småskalig uppfödning av Maine Coons på vår gård i hjärtat av södra Småland, omgiven av skog och gröna ängar. Katter har alltid varit en stor del av mitt liv, och det är en glädje att få dela min vardag med dessa fantastiska varelser.`,
       img: "Img/Loke.jpg",
     },
     {
       title: "Familjemedlemmar först, katteri sen",
-      content: `Jag säljer/köper inte av honor, utan mina katter lever i första hand som familjemedlemmar. Kattungarna föds direkt in i en trygg och kärleksfull miljö.`,
+      content: `Vi lever med våra katter nära naturen i Lagan, i ett lugn och kärleksfullt hem. Våra katter är familjemedlemmar i första hand, och vi strävar efter att ge varje kattunge en stimulerande uppväxt med naturliga intryck och massor av socialisering.`,
       img: "Img/Idun_1.jpg",
     },
     {
-      title: "Fokus på glada och välmående katter",
-      content: `Jag lägger massor med tid och energi på att leka, gosa och hantera varje enskild kattunge för att säkerställa att varje liten krabat blir så trygg som möjligt. Detta skapar förutsättningar som gör att de snabbt kan knyta an till sina nya ägare. Tidigare köpare har tex nämnt att deras kattungar redan första kvällen lägger sig nära och spinner, vilket är precis så jag vill att det ska vara.`,
+      title: "Fokus på glada, friska och välmående katter",
+      content: `Jag lägger massor med tid och energi på att leka, gosa och hantera varje enskild kattunge för att säkerställa att varje liten krabat blir så trygg som möjligt. Detta skapar förutsättningar som gör att de snabbt kan knyta an till sina nya ägare. Vi föder upp med fokus på hälsa, temperament och rasstandard.`,
       img: "Img/Vale.jpg",
     },
   ];
-
-  // sections.forEach((section) => {
-  //   const h2 = document.createElement("h2");
-  //   h2.textContent = section.title;
-  //   container.appendChild(h2);
-
-  //   const p = document.createElement("p");
-  //   p.innerHTML = section.content.replace(/\n/g, "<br>");
-  //   container.appendChild(p);
-  // });
-
-  // root.append(aboutMeTitle, aboutMeTitle2, container, logo);
 
   sections.forEach((section) => {
     const h2 = document.createElement("h2");
