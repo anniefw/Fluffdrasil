@@ -62,18 +62,18 @@ function printLoa() {
   heritagelink.textContent = "Loas stamtavla";
   heritagelink.target = "_blank";
   const health = document.createElement("h2");
-  health.textContent = "Hälsoinformation för Loa";
+  health.textContent = "Hälsoinformation";
   const healthText = document.createElement("p");
   healthText.innerHTML =
-    "HD: sker i mars 2026.<br> DNA: sker i mars 2026.<br> HCM: inväntar tidsbok.";
+    "HD: sker i mars 2026, inväntar resultat.<br> DNA: fri från PKD, SMA och HCM (MyCatDNA).<br> HCM: inväntar tidsbok.";
 
   root.append(
     loaTitle,
     loaText,
-    loa3Image,
-    heritagelink,
     health,
     healthText,
+    loa3Image,
+    heritagelink,
     loa2Image,
     loaImage,
     returnBtn,
